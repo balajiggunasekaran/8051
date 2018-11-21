@@ -1,0 +1,9 @@
+LOOP:   JB P3.3, LED_OFF;
+LED_ON:	CLR P2.0; Copy P3 contents to P2
+	SJMP LOOP;
+LED_OFF:SETB P2.0;
+	SJMP LOOP;
+	END
+	
+	
+	
